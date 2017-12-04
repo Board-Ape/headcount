@@ -13,22 +13,19 @@ export default class DistrictRepository {
     }, {})
   }
 
-  findByName(location = undefined) {
-    if(location) {
+  findByName(location = '') {
       const matchLocation = Object.keys(this.data).find( district => {
         return district.toUpperCase() === location.toUpperCase();
       })
       return this.data[matchLocation];
-    }
   }
 
-  findAllMatches(locationString) {
+  findAllMatches(locationString = '') {
     const allDistrictData = Object.keys(this.data).map( district => this.data[district]);
 
-    if(locationString) {
       return allDistrictData.filter( districts =>
-        districts.location.includes(locationString.toUpperCase()));
-    }
+        districts.location.includes(locationString.toUpperCase())
+      );
 
     return allDistrictData;
   }

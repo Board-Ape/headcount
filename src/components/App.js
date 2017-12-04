@@ -24,7 +24,7 @@ class App extends Component {
       return card.location === newComparison.location;
     });
 
-    if (foundCard === undefined) {
+    if (!foundCard) {
       foundCard = {location: ''};
     }
     if (foundCard.location === newComparison.location) {

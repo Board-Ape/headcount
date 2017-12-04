@@ -1,30 +1,6 @@
-.card-container-component {
-	display: flex;
-	flex-wrap: wrap;
-	margin: auto;
-	width: 1365px;
-}
-
-@media screen and (max-width: 1364px) {
-	.card-container-component {
-		width: 1092px;
-	}
-}
-
-@media screen and (max-width: 1091px) {
-	.card-container-component {
-		width: 819px;
-	}
-}
-
-@media screen and (max-width: 818px) {
-	.card-container-component {
-		width: 546px;
-	}
-}
-
-@media screen and (max-width: 545px) {
-	.card-container-component {
-		width: 273px;
-	}
-}
+.card-container {
+  display: flex;
+  justify-content: space-around;
+  font-size: 20px; }
+  .card-container h2 {
+    font-size: 30px; }
