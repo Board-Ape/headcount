@@ -1,6 +1,12 @@
+.card-container-component {
+  display: flex;
+  flex-wrap: wrap;
+  margin: auto;
+  justify-content: space-around; }
+
 .comparison-card-container-component {
   display: block;
-  height: 465px;
+  height: 542px;
   margin: auto;
   position: relative;
   width: 800px; }
@@ -14,7 +20,7 @@
 .comparison-top {
   display: flex;
   justify-content: space-between;
-  padding-bottom: 10px; }
+  padding-bottom: 100px; }
 
 .clear-button {
   background-color: #F1970B;
