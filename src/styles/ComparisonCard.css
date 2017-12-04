@@ -1,0 +1,42 @@
+.comparison-center {
+  display: flex;
+  flex-direction: column;
+  height: 285px;
+  justify-content: space-around;
+  left: calc(50% - 130px);
+  position: absolute;
+  top: 0;
+  width: 263px; }
+  .comparison-center h3 {
+    color: #1c6d9c;
+    font-size: 50px;
+    text-align: center; }
+  .comparison-center h4 {
+    color: #1c6d9c;
+    font-size: 20px;
+    line-height: .9;
+    opacity: .6;
+    text-align: center; }
+  .comparison-center h5 {
+    color: #004973;
+    font-family: 'Magallanes', sans-serif;
+    font-size: 20px;
+    text-align: center; }
+  .comparison-center h6 {
+    color: #1c6d9c;
+    font-family: 'Magallanes', sans-serif;
+    opacity: .7;
+    text-align: center; }
+  .comparison-center .arrow-left {
+    left: -29px;
+    position: absolute;
+    top: 5px;
+    width: 296px; }
+  .comparison-center .arrow-right {
+    bottom: 5px;
+    position: absolute;
+    right: -29px;
+    width: 296px; }
+  .comparison-center .compare-bottom {
+    position: relative;
+    z-index: 2; }

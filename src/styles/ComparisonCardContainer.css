@@ -1,0 +1,37 @@
+.comparison-card-container-component {
+  display: block;
+  height: 332px;
+  margin: auto;
+  position: relative;
+  width: 819px; }
+  .comparison-card-container-component .instructions {
+    color: #0e5d8c;
+    font-family: 'Magallanes', sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+    text-align: center; }
+
+.comparison-top {
+  display: flex;
+  justify-content: space-between; }
+
+.clear-button {
+  background-color: #2c89bf;
+  border: none;
+  border-radius: 6px;
+  bottom: 6px;
+  color: #fff;
+  cursor: pointer;
+  display: block;
+  font-family: 'Magallanes', sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+  height: 40px;
+  left: calc(50% - 77px);
+  margin: auto;
+  padding: 0px;
+  position: absolute;
+  width: 154px; }
+
+.clear-button:hover {
+  background-color: #1c6d9c; }
