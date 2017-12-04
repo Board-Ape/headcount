@@ -1,0 +1,7 @@
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  font-size: 20px; }
+  .card-container h2 {
+    font-size: 30px; }

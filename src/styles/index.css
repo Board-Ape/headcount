@@ -1,0 +1,35 @@
+body {
+  background-color: #164C69; }
+
+.app {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: 'Alfa Slab One', cursive; }
+
+h1 {
+  font-family: 'Allerta Stencil', sans-serif;
+  color: #F1970B;
+  font-size: 48px;
+  margin-top: 50px;
+  margin-bottom: 20px; }
+
+.cards {
+  margin: 3px;
+  padding: 10px;
+  width: 400px;
+  text-align: center;
+  border: 2px solid #F1970B; }
+
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  font-size: 20px; }
+  .card-container h2 {
+    font-size: 30px; }
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif; }

@@ -1,0 +1,22 @@
+$dark-green-blue: #164C69;
+$burnt-orange: #F1970B;
+$reddish-orange: #D46000;
+
+body {
+  background-color: $dark-green-blue;
+}
+
+.app {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: 'Alfa Slab One', cursive;
+}
+
+h1 {
+  font-family: 'Allerta Stencil', sans-serif;
+  color: $burnt-orange;
+  font-size: 48px;
+  margin-top: 50px;
+  margin-bottom: 20px;
+}

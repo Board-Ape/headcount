@@ -4,9 +4,8 @@ import Card from './Card';
 class CardContainer extends Component {
   render() {
     return(
-      <div>
-        <h1>CardContainer</h1>
-        {(this.props.displayData.findAllMatches().map((card, index) => {
+      <div className='card-container'>
+        {(this.props.displayData.map((card, index) => {
           return <Card
             key={index}
             id={index}

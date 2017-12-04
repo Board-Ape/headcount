@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import '../App.css';
 import kinderData from '../../data/kindergartners_in_full_day_program.js';
 import DistrictRepository from '../helper';
 import Search from './Search';
@@ -10,18 +9,20 @@ class App extends Component {
   constructor() {
     super();
     this.state = {
-      displayData: new DistrictRepository(kinderData)
+      displayData: new DistrictRepository(kinderData).findAllMatches()
     }
   }
 
-  updateDisplayView = (buttonValue) => {
-    this.setState({ displayData: buttonValue })
+  searchDistrictCards = (string) => {
+    const searchQuery = new DistrictRepository(kinderData).findAllMatches(string)
+    this.setState({ displayData: searchQuery })
   }
 
   render() {
     return (
-      <div>
-        <Search />
+      <div className='app'>
+        <h1>Head Count 2.0</h1>
+        <Search searchDistrictCards={ this.searchDistrictCards } />
         <CardContainer displayData={ this.state.displayData } />
       </div>
     );
