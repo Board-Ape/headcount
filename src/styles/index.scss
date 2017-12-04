@@ -1,11 +1,8 @@
-@import './App.scss';
-@import './Cards.scss';
-@import './CardContainer.scss';
-@import './ComparisonCard.scss';
-@import './ComparisonCardContainer.scss';
+* {
+  font-family: 'Indie Flower', cursive;
+}
 
 body {
   margin: 0;
   padding: 0;
-  font-family: sans-serif;
 }

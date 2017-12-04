@@ -5,7 +5,7 @@ import Search from './Search';
 import CardContainer from './CardContainer';
 import ComparisonCardContainer from './ComparisonCardContainer';
 import '../helper';
-import '../css/App.css';
+import '../styles/App.css';
 
 class App extends Component {
   constructor() {

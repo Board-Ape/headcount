@@ -1,12 +1,12 @@
 import React from 'react';
-import '../css/Card.css';
+import '../styles/Card.css';
 import PropTypes from 'prop-types';
 
 const Card = ({ location, data, id, updateCardToCompare, className }) => {
   let yearArray = Object.keys(data);
   let mappedYearArray = yearArray.map((year, index) => {
     if (Number(data[year]) > .5) {
-      return  <p className="change-green" key={`${id}-${index}`}>
+      return  <p className="change-red" key={`${id}-${index}`}>
                 <span className="info-span">{year}:</span>{data[year]}
               </p>;
     } else {

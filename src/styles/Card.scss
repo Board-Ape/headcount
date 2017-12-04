@@ -1,0 +1,50 @@
+.card-component {
+	background-color: #CCCCCC;
+	border-radius: 30px;
+	cursor: pointer;
+	margin: 6px;
+	padding: 5px;
+	width: 251px;
+		h2 {
+			margin-top: 25px;
+			color: #00284D;
+		}
+}
+
+.card-component:hover {
+	background-color: rgba(255,255,255,.65);
+}
+
+.card-info-block {
+	margin: 0 auto;
+	width: 140px;
+		p {
+			color: #008B91;
+			font-size: 30px;
+		}
+		.change-red {
+			color: #D46000;
+		  opacity: .7;
+		}
+}
+
+.info-span {
+	font-weight: 900;
+	margin-right: 15px;
+}
+
+hr {
+	border: 2px solid #2c89bf;
+	opacity: .16;
+	width: 90%;
+}
+
+
+
+.highlighted {
+	background-color: rgba(255,255,255,.65);
+}
+
+.highlighted:hover {
+	background-color: rgba(255,255,255,.4);
+}

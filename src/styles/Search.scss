@@ -1,0 +1,21 @@
+input {
+  border-radius: 5px;
+  color: #2c89bf;
+  font-size: 20px;
+  height: 40px;
+  padding: 5px;
+  width: 308px;
+}
+
+input[type=text] {
+  background-color: #CCCCCC;
+}
+
+::placeholder {
+  color: #F1970B;
+}
+
+.search-container {
+  text-align: center;
+  padding: 30px;
+}

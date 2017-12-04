@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import '../css/Search.css';
+import '../styles/Search.css';
 import PropTypes from 'prop-types';
 
 export default class Search extends Component {
@@ -17,7 +17,7 @@ export default class Search extends Component {
     return(
       <div className='search-container'>
         <img src="assets/headcount-logo.svg" />
-        <input placeholder="search"
+        <input placeholder="Search Districts"
                onChange={this.searchInput}
         />
       </div>

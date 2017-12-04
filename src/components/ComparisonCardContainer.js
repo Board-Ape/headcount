@@ -1,7 +1,7 @@
 import React from 'react';
 import ComparisonCard from './ComparisonCard';
 import Card from './Card.js';
-import '../css/ComparisonCardContainer.css';
+import '../styles/ComparisonCardContainer.css';
 import PropTypes from 'prop-types';
 
 class ComparisonCardContainer extends React.Component {
@@ -34,10 +34,10 @@ class ComparisonCardContainer extends React.Component {
           }))}
           </div>
           <button onClick={ this.props.clearComparisons }
-                className="clear-button">clear
+                className="clear-button">Clear
           </button>
           <div className="comparison-center">
-            <p className="instructions">select TWO districts<br />&larr; to compare &rarr;</p>
+            <p className="instructions">Two Districts Average Comparison</p>
           </div>
         </div>
       );
@@ -62,7 +62,7 @@ class ComparisonCardContainer extends React.Component {
                             compare={this.props.comparison.compare}
             />
           <button onClick={ this.props.clearComparisons }
-            className="clear-button">clear
+            className="clear-button">Clear
           </button>
         </div>
       );
