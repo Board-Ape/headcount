@@ -1,26 +1,30 @@
 import React, { Component } from 'react';
+import '../css/Search.css';
+import PropTypes from 'prop-types';
 
-class Search extends Component {
+export default class Search extends Component {
   constructor() {
     super();
-    this.state = {
-      searchInput: this.updateSearchInput
-    }
-  }
 
-  updateSearchInput = (event) => {
-    const searchString = event.target.value
-    this.props.searchDistrictCards(searchString)
+    this.searchInput = (event) => {
+      let searchString = event.target.value;
+
+      this.props.search(searchString);
+    };
   }
 
   render() {
     return(
-      <div>
-        <input placeholder='Search Districts'
-                onChange={ this.state.searchInput } />
+      <div className='search-container'>
+        <img src="assets/headcount-logo.svg" />
+        <input placeholder="search"
+               onChange={this.searchInput}
+        />
       </div>
-    )
+    );
   }
 }
 
-export default Search;
+Search.propTypes = {
+  search: PropTypes.func
+};
